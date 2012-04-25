@@ -1,4 +1,4 @@
-NAME = projeto-pibic-flauta plano-bolsista-flauta projeto-pibic-melodias plano-bolsista-melodias
+NAME = projeto-pibic-contornos-choro plano-bolsista-contornos-choro
 USE_PDFLATEX=1
 
 include ~/.latexmk
