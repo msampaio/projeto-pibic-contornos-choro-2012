@@ -1,3 +1,4 @@
+%% Local IspellDict: brasileiro
 \documentclass[11pt]{article}
 \usepackage{graphicx}
 \usepackage{url}
@@ -20,8 +21,11 @@
 \cabecalho{Projeto de Pesquisa do Orientador}
 
 \dadosProjetoOrientador
-{Título}
-{Nome do Orientador}
+% {O estudo dos contornos musicais do gênero choro com uso de
+%   ferramentas computacionais}
+{Musicologia Computacional no estudo dos contornos musicais de obras
+  do gênero choro}
+{Marcos da Silva Sampaio}
 {Genos}
 {Musicologia computacional, Teoria Musical, Análise Musical}
 {EDITAL PROPCI/UFBA 01-2012/2013}
@@ -32,32 +36,172 @@
 
 \Section{Objetivos e Justificativa}
 
+Contornos podem ser entendidos como perfis ou desenhos de objetos. Em
+música podem ser associados a parâmetros como altura, densidade e
+duração. Teorias desenvolvidas por diferentes autores
+\cite{Friedmann1985,Morris1987,Marvin1988,Bor2009} ajudam no
+entendimento mais profundo de contornos musicais.
+
+Musicologia computacional é definida a grosso modo como o estudo de
+música com a auxílio de programas de computador. A análise musical com
+auxílio do computador é importante porque pode ajudar a identificar
+elementos musicais em um grande corpus musical em um tempo curto. A
+musicologia computacional pode ajudar a responder perguntas de
+pesquisa como quais as cadências mais comuns em todas as obras de
+Beethoven.
+
+O repertório de choro é numeroso e importante.......
+
+A hipótese principal desta pesquisa é que as frases do repertório do
+choro apresentam uma alta incidência de certos padrões de contornos
+melódicos. Um estudo de contornos semelhante mostrou que a maior parte
+dos 9108 segmentos de frases dos 371 corais de Bach podem ser
+reduzidas a um contorno de formato < 1 2 0 >\footnote{Aguardando
+  resposta para publicação.}, em uma notação em que as alturas são
+enumeradas com inteiros do menor para o maior valor.
 
 \paragraph{Objetivos}
 \label{sec:objetivos}
 
+Dessa forma, o principal objetivo deste projeto é verificar relações
+entre os contornos das melodias de uma coleção de 477 composições do
+gênero choro usando as ferramentas computacionais
+Music21\footnote{Disponível em \url{http://mit.edu/music21}.} e o
+MusiContour\footnote{Disponível em
+  \url{http://genosmus.com/MusiContour}.}
+
+São objetivos secundários deste projeto
+\begin{enumerate}
+  %% FIXME: inserir referência
+\item codificar as composições da coleção mencionada no formato
+  MusicXML\footnote{Disponível em \url{}.}, formato de entrada de
+  dados do Music21.
+\item desenvolver scripts para retornar os dados da análise dos
+  contornos das melodias da coleção mencionada.
+\end{enumerate}
 
 \paragraph{Justificativa}
 \label{sec:justificativa}
 
-\Section{Metodologia}
+A Teoria de Relações de Contornos Musicais já foi utilizada para
+análise de obras de diversos compositores como Arnold Schoenberg,
+Olivier Messiaen e Wolgang A. Mozart. O seu uso em música brasileira
+está restrita à análise de \opus{Suave Mari Magno}, op. 97, de Ernst
+Widmer \cite{Thiesen2005}. Até o presente momento não há qualquer
+publicação de análise de contornos ou de estudo de grandes corpus de
+composições do gênero choro com uso de ferramentas computacionais.
 
+Nos últimos 5 anos venho trabalhando com a Teoria de Relações de
+Contornos Musicais, desenvolvi software para processamento de
+contornos e um módulo para análise automática de contornos de obras
+com uso do Music21.
+%% FIXME: revisar em que pessoa está o texto
+Além disso venho trabalhando com Musicologia Computacional estudando
+aspectos estruturais dos corais de Bach \cite{Kroger2008}. O estudo
+dos contornos das melodias das composições desta coleção será útil
+tanto para entender estas composições como para conectar as
+tecnologias que venho estudando nos últimos anos.
+
+Além do ineditismo do objetivo final e métodos, o estudo dos contornos
+das composições do corpus mencionado poderá resultar em um maior
+entendimento das estruturas musicais destas composições. Além disso os
+resultados poderão ser usados enquanto ferramentas didáticas em aulas
+de Composição e Análise Musical.
+
+\Section{Metodologia}
+% Descrição da maneira como serão desenvolvidas as atividades para se
+% chegar aos objetivos propostos. Indicar os materiais e métodos que
+% serão usados.
+
+A análise de um corpus de música muito grande demanda muito tempo. O
+uso de ferramentas computacionais pode diminuir consideravelmente o
+tempo de análise e ajudar a encontrar informações que dificilmente
+seriam percebidas com a análise manual. Por exemplo, um músico
+treinado levaria algumas semanas para procurar por acordes de sexta
+aumentada em todos os 371 corais de Bach. Com o uso de ferramentas
+computacionais Kroger et al \cite{Kroger2008} encontraram três
+ocorrências deste tipo de acorde tipo neste corpus em menos de um
+minuto.
+
+Dessa forma, o uso de ferramentas computacionais pode ser útil na
+análise de contornos do corpus mencionado. Então é necessário
+codificar o corpus em formato digital, segmentar as composições em
+unidades menores, extrair os contornos, e comparar os contornos usando
+as operações fornecidas pela Teoria de Contornos. Após estas etapas
+finalmente é possível avaliar os dados e buscar por resultados
+musicalmente relevantes.
+
+Para este trabalho usaremos como material
 
 \begin{enumerate}
+\item 72 composições da coleção ``O melhor de Pixinguinha''.
+\item 297 composições dos 3 volumes do songbook ``Choro'', de Almir
+  Chediak.
+\item 180 composições da coleção ``O melhor do Choro brasileiro''
+\item Programa Music21
+\item Módulo de contornos do Music21
 \end{enumerate}
 
+As etapas deste projeto são:
+\begin{enumerate}
+\item Codificação de todo o corpus de composições em formato MusicXML.
+  \begin{enumerate}
+  \item O formato MusicXML pode ser exportado por softwares de edição
+    de partituras como MuseScore, Finale, e Sibelius. O software será
+    escolhido de acordo com a preferência do bolsista.
+  \item As partituras a serem codificadas fazem parte da coleção ``O
+    Melhor de Pixinguinha'', da Editora Irmãos Vitale
+  \end{enumerate}
+\item Segmentação das composições em frases. Esta etapa ocorrerá
+  simultaneamente à codificação, pois a segmentação será inserida no
+  arquivo MusicXML.
+\item Processamento dos contornos das frases das composições com
+  operações fornecidas pela Teoria de Contornos.
+  \begin{enumerate}
+  \item Nesta etapa buscaremos relações entre os contornos de todas as
+    melodias. Usaremos o software para Musicologia Computacional,
+    Music21, o seu módulo de contornos, e desenvolveremos scripts para
+    a análise.
+  \item Esta etapa ocorrerá ao longo de toda a pesquisa, à medida que
+    as composições forem codificadas.
+  \end{enumerate}
+\item Análise dos dados da etapa anterior e busca por resultados
+  musicalmente relevantes.
+  \begin{enumerate}
+  \item As operações de contornos retornam dados de tipos bastante
+    diferentes, como índices, vetores, representações gráficas.
+  \item Esta análise será feita com uma abordagem bottom-up, em que os
+    métodos são definidos à medida em que se avança no trabalho
+    \cite{Graham1994}.
+  \end{enumerate}
+\end{enumerate}
+
+
 \Section{Viabilidade e financiamento}
+% Argumentação clara e sucinta, demonstrando a viabilidade do projeto
+% e seus financiamentos (se existentes) com fonte e período de
+% execução.
 
 A instituição onde realizaremos a pesquisa, Escola de Música da UFBA,
-já conta com o equipamento necessário para a execução desse projeto:
+já conta com o equipamento e material necessário para a execução desse
+projeto:
 
 \begin{enumerate}
 \item Laboratório de computação em música. \\
   O orientador é membro do Genos---grupo de pesquisa em Computação
   Musical---e coordenador do GenosLab, o laboratório do grupo.
 \item Computadores para o desenvolvimento.\\
-  O orientador possui equipamento próprio. O bolsista tem equipamento
-  próprio e acesso livre aos computadores do GenosLab.
+  O orientador e bolsista possuem equipamento próprio e acesso livre
+  aos computadores do GenosLab.
+\item Bibliografia.\\ A biblioteca da instituição e o Portal de
+  Periódicos da CAPES dispõem da grande maioria da bibliografia
+  necessária e o orientador possui cópia de todos os itens
+  necessários.
+\item Equipe de apoio do Grupo de pesquisa Genos.\\ O grupo de
+  Pesquisa Genos tem uma equipe multidisciplinar de 10 membros, com
+  professores com experiência na área de Teoria, Composição e Educação
+  Musical, e Etnomusicologia. Além disso é composto por professores,
+  alunos de pós-graduação e graduação.
 \end{enumerate}
 
 O GenosLab conta com computadores com placa de áudio profissional,
@@ -67,27 +211,47 @@ grande viabilidade já que os recursos materiais já estão garantidos,
 sendo necessários somente os recursos humanos, ou seja, bolsista.
 
 \Section{Resultados e impactos esperados}
+% Relação dos resultados ou produtos que se espera obter após o
+% término da pesquisa.
 
 Ao final da nossa pesquisa esperamos
-
 \begin{enumerate}
+\item Apresentar as relações de contornos musicais no corpus de
+  composições trabalhado.
+\item Ter o corpus de composições em formato MusicXML, útil para
+  outros tipos de análise com o Music21.
+\item Disponibilizar os scripts que retornam os dados das análises
+  para uso posterior por outros pesquisadores.
+\item Aprimorar o módulo de contornos do Music21.
+\item Escrever artigos científicos sobre a pesquisa e apresentar
+  trabalhos em congressos científicos nacionais e/ou internacionais.
 \end{enumerate}
 
 \Section{Cronograma de execução}
+% Relação itemizada das atividades previstas, em ordem seqüencial e
+% temporal, de acordo com os objetivos traçados no projeto e dentro do
+% período proposto.
 
-Conforme mencionado na seção de metodologia, as atividades não têm uma
-hierarquia definida e ocorrerão simultaneamente.
+Como foi visto na metodologia, as atividades previstas deste projeto
+ocorrerão simultaneamente de modo contínuo. Dessa forma a maioria das
+atividades ocorrerão durante todo o período de vigência da bolsa.
+
 
 \begin{tabular}{l|cccc}
   & \multicolumn{4}{c}{Trimestres}\\
-  & 1 & 2 & 3 & 4 \\
+  Atividades& 1 & 2 & 3 & 4 \\
   \hline
+  Codificação e segmentação de melodias&\ok&\ok&\ok&\ok\\
+  Processamentos dos contornos das melodias&\ok&\ok&\ok&\ok\\
+  Análise de dados&&\ok&\ok&\ok\\
+  Redação de artigos acadêmicos&&&\ok&\\
+
 \end{tabular}
 
 \addcontentsline{toc}{section}{\refname}
 
-%\info{Relação itemizada das referências que subsidiam a proposta de
-%  pesquisa, colocando as mais importantes. maximo de 10}
+% Relação itemizada das referências que subsidiam a proposta de
+% pesquisa, colocando as mais importantes. maximo de 10
 
 \renewcommand{\refname}{
   \hspace{1.5em}\textcolor{blue}{6.\hspace{.5em}Referências
@@ -95,6 +259,6 @@ hierarquia definida e ocorrerão simultaneamente.
 }
 
 \bibliographystyle{plain}
-\bibliography{bib,genos}
+\bibliography{references}
 
 \end{document}
