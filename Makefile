@@ -12,3 +12,6 @@ light_clean:
 	rm -f *.bbl
 	rm -f *.blg
 	rm -f *.aux
+
+sync:
+	rsync -a --progress projeto-pibic-contornos-choro.pdf plano-bolsista-contornos-choro.pdf ~/Dropbox/Public/
