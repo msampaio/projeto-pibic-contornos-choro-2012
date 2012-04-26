@@ -8,7 +8,7 @@ include config/make/latex.mk
 include config/make/latex-mk/latex.gmk
 
 light_clean:
-	rm -f $(NAME).log
-	rm -f $(NAME).bbl
-	rm -f $(NAME).blg
-	rm -f $(NAME).aux
+	rm -f *.log
+	rm -f *.bbl
+	rm -f *.blg
+	rm -f *.aux
