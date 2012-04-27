@@ -1,31 +1,27 @@
-Contornos podem ser entendidos como desenhos, perfis ou silhuetas de
-objetos. Em música contornos podem ser associados a parâmetros como
-altura, duração e densidade. O estudo de relações de contornos
-musicais é importante porque, assim como conjuntos de notas e motivos,
-podem ajudar a dar coerência a uma obra musical.
+Contornos podem ser entendidos como desenhos ou perfis de objetos. Em
+música, contornos podem ser associados a parâmetros como altura,
+duração e densidade. O estudo de relações de contornos musicais é
+importante porque, assim como conjuntos de notas e motivos, podem
+ajudar a dar coerência a uma obra musical.
 
-Desde 1985, autores como Friedmann, Robert Morris, e Elizabeth Marvin
-e Paul Laprade têm desenvolvido teorias para ajudar no entendimento
-das relações de contornos musicais. Tais teorias contêm diversas
-declarações matemáticas, como forma prima, redução de contornos e
-inversão. Recentemente verifiquei uma inconsistência no algoritmo de
-forma prima de Marvin e Laprade. A forma prima é importante, pois
-estabelece o contorno representante de uma classe de contornos. Apesar
-desta importância, não há menção desta inconsistência em nenhum dos
-trabalhos posteriores à definição deste algoritmo. Este problema de
-inconsistência pode implicar em fragilidades nas ramificações destas
-teorias, nas análises de contornos de obras musicais publicadas até
-então, e no uso futuro das operações destas teorias na composição
-musical.
+O gênero choro é importante porque possui um repertório numeroso, mais
+que centenário, praticado de norte a sul do Brasil, além de ter sido
+abordado em mais de 100 teses e dissertações brasileiras. No entanto
+não há qualquer estudo dos contornos musicais de um corpus grande
+deste repertório com uso da Teoria de Relações de Contornos Musicais.
 
-Por esta razão eu acredito ser essencial uma revisão destas teorias
-para que se possa verificar a existência de outras possíveis
-inconsistências. Desse modo esta revisão poderá representar um avanço
-significativo no estado de arte das teorias de relações de contornos
-musicais.
+Ferramentas computacionais aplicadas à música podem ajudar no estudo
+de grandes corpora de obras, realizando análises de centenas de
+músicas em pouco tempo. Por exemplo, o software Rameau [5] analisa a
+harmonia dos 371 corais de Bach em 20 segundos com mais de 90% de
+acerto.
 
-O objetivo principal desta pesquisa é levantar possíveis
-inconsistências nas teorias de contornos de Friedmann, Morris e
-Marvin, e propor soluções. Este levantamento será feito por meio de
-uma revisão das operações definidas em tais teorias com o auxílio de
-ferramentas computacionais.
+Dessa forma, o estudo dos contornos de um corpus grande de obras do
+choro resultará em um maior entendimento das estruturas musicais deste
+gênero. Além disso os resultados deste trabalho poderão ser usados
+enquanto ferramentas didáticas em aulas de Composição e Análise
+Musical.
+
+O objetivo principal desta pesquisa é, portanto, verificar relações
+entre contornos musicais de 549 composições do gênero choro usando
+ferramentas computacionais já disponíveis para este fim.
