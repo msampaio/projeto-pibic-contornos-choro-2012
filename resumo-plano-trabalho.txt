@@ -1,0 +1,4 @@
+O trabalho do bolsista é codificar os dados de entrada para o
+processamento dos contornos das melodias do choro. Este trabalho será
+realizado de forma contínua ao longo da pesquisa e será fundamental
+para o estudo das relações de contornos das melodias do choro.
